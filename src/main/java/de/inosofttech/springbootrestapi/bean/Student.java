@@ -2,15 +2,15 @@ package de.inosofttech.springbootrestapi.bean;
 
 public class Student {
 
-    private int id;
-    private String firstName;
-    private String lastname;
+    private final int id;
+    private final String firstName;
+    private final String lastName;
 
 
     public Student(int id, String firstName, String lastname) {
         this.id = id;
         this.firstName = firstName;
-        this.lastname = lastname;
+        this.lastName = lastname;
     }
 
     public int getId() {
@@ -21,8 +21,8 @@ public class Student {
         return firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 }
 
